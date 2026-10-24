@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Админка — MM2 Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-box">
+    <h2>Добавить оружие</h2>
+    <form id="add-item-form">
+      <input name="name" placeholder="Название" required>
+      <select name="rarity" style="padding:13px;background:#0a0a0f;border:1px solid #2a2a3a;border-radius:10px;color:#fff">
+        <option>Godly</option>
+        <option>Chroma</option>
+        <option>Ancient</option>
+        <option>Common</option>
+      </select>
+      <input name="price" type="number" placeholder="Цена (₽)" required>
+      <input name="image" type="url" placeholder="URL картинки (необязательно)">
+      <button class="btn-primary">Добавить</button>
+    </form>
+    <a href="index.html" class="back-link">← На главную</a>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
